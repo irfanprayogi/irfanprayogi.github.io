@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="Belajar Dunia Teknologi">
+	<meta name="author" content="Irfan Prayogi">
+	<title>FPRYGI</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/animasi/animate.css-main/animate.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&family=Sora:wght@700&family=Open+Sans:wght@300&display=swap');
+	</style> 
+
+</head>
+<body>
+	<header class="l-header">
+		<!--==== BAGIAN CONTAINER HEADER ====-->
+		<div class="container-header" class="animate__animated animate__slideInDown" id="cnt-header">
+			<!--==== BAGIAN LOGO HEADER ====-->
+			<div  class="logo">
+				<h1><a href="index.html">FNPRYGI</a></h1>
+			</div>
+			<!--==== BAGIAN NAVBAR ====-->
+			<nav>
+				<ul class="nav_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#prg">About</a></li>
+  					<li><a href="product.html">Portofolio</a></li>
+  					<li><a href="contact.html" target="_blank"><button class="btn-contact">Contact</button></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="l-main">
+		<!--==== BAGIAN JUMBOTRON PROFIL & CONTAINER MAIN ====-->
+		<div class="container-main">
+			<!--==== BAGIAN PROFIL ====-->
+			<section class="profil-me" id="profil">
+				<!--==== BAGIAN NAMA PROFIL ====-->
+				<div class="nama-profil">
+					<h1 id="nma-profil">Hello,<br>I'am <span class="nma-color">Irfan Prayogi</span><br>Network Engineer</h1>
+				</div>
+				
+				<!--==== BAGIAN PHOTO PROFIL ====-->
+				<div class="photo-profil">
+					<img id="pht-profil" src="assets/img/irfan1.jpg" alt="photo profil">
+				</div>
+				<!--==== BAGIAN SOSIAL MEDIA =====-->
+				<div class="medsos-profil">
+					<a class="medsos" href="https://www.facebook.com/fnprygi/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a class="medsos" href="https://www.instagram.com/fanprayogi21/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+					<a class="medsos" href="https://wa.me/6289665344711?text=Halo%20Irfan%20Saya%20ingin%20berkenalan%20dengan%20Anda%20:D" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+					<a class="medsos" href="https://twitter.com/fnprygi" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					<a class="medsos" href="https://github.com/irfanprayogi" target="_blank"><i class="fab fa-github-square"></i></a>
+				</div>
+				<!--==== BAGIAN BUTTON CV =====-->
+				<div class="btn-cv">
+					<a href="assets/CV/CV IRFAN.pdf" class="btn first" target="blank">Download My CV</a>
+				</div>
+			</section>
+
+			<!--==== BAGIAN PORTOFOLIO ====-->
+			<section class="portofolio">
+				<div class="portofolio-text">
+					<h2 class="portofolio-title">Portofolio</h2>
+				</div>
+				<div class="row-portofolio">
+					
+					<div class="col-4">
+						<div class="card">
+							<img  src="assets/img/porto1.jpg" class="card-img-top" alt="img1">
+						</div>
+					</div>
+
+				</div>	
+			</section>
+			
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("cnt-header");
+		var sticky = navbar.offsetTop;
+			function myFunction() {
+				if (window.pageYOffset >200) {
+					navbar.classList.add("sticky-nav")
+				} else {
+					navbar.classList.remove("sticky-nav");
+				}
+			}
+	</script>
+</body>
+</html>
